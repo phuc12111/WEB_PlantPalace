@@ -1,0 +1,17 @@
+a {
+    line-height: 1.1;
+    display: inline-block;
+    text-decoration: none;
+    
+    &:after {
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: #e74c3c;
+      transition: width 0.5s ease-in-out;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
